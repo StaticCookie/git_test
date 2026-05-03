@@ -17,7 +17,9 @@ git commit -m "A message describing what you have done to make this snapshot dif
 
 Commands related to checking status or log history
 git status
-git log
+git log (will also show hash)
+
+git cat-file -p {{HASH}} (Will show the the tree hash, which can be used to see the blob hash with the same command but replacing the hashes)
 
 The basic Git syntax is:
 program | action | destination.
