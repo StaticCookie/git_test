@@ -24,3 +24,16 @@ git cat-file -p {{HASH}} (Will show the the tree hash, which can be used to see 
 The basic Git syntax is:
 program | action | destination.
 
+Setting a config key in GIT:
+
+Example: git config set --global user.name "ThePrimeagen"
+
+  git config: The command to interact with your Git configuration.
+  set: The subcommand to set a value – i.e., to add it if it doesn't already exist, or update it if it does.
+  --global: Flag stating you want this configuration to be stored globally in your ~/.gitconfig. The opposite is --local, which stores the configuration in the current repository only.
+  user: The section.
+  name: The key within the section.
+  "ThePrimeagen": The value you want to set for the key.
+
+'Unset' / remove a key from a configuration value
+git config unset <key>
